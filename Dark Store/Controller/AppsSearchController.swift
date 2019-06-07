@@ -17,6 +17,38 @@ class AppsSearchController: UICollectionViewController, UICollectionViewDelegate
         
         collectionView.register(SearchResultCell.self, forCellWithReuseIdentifier: cellID)
         
+        fetchITunesApps()
+    }
+    
+    
+    fileprivate func fetchITunesApps() {
+        let urlString = "https://itunes.apple.com/search?term=instagram&entity=software"
+        guard let url = URL(string: urlString) else { return }
+        
+        // fetch data with from Internet
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            if let err = error {
+                print("Failed to fetch apps:", err)
+                return
+            }
+            
+            // when it is successful
+            guard let data = data else { return }
+            
+            do {
+
+                let searchResult = try JSONDecoder().decode(SearchResult.self, from: data)
+                
+                searchResult.results.forEach({ print($0.trackName, $0.primaryGenreName) })
+                
+                //print(searchResult) // showing the result
+            } catch let jsonError { // catch let -> rename error
+                print("Failed to decode json!", jsonError)
+            }
+            
+        }.resume() // make a request
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -29,8 +61,9 @@ class AppsSearchController: UICollectionViewController, UICollectionViewDelegate
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)
-                
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! SearchResultCell
+        cell.nameLabel.text = "Facebook"
         return cell
     }
     

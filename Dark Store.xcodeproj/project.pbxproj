@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3628316122AB13BE000FBB4D /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3628316022AB13BE000FBB4D /* SearchResult.swift */; };
 		362F2DD222A61943009D1CD4 /* AppsSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362F2DD122A61943009D1CD4 /* AppsSearchController.swift */; };
 		36A5FD7122A49144000586ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A5FD7022A49144000586ED /* AppDelegate.swift */; };
 		36A5FD7322A49144000586ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A5FD7222A49144000586ED /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3628316022AB13BE000FBB4D /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		362F2DD122A61943009D1CD4 /* AppsSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsSearchController.swift; sourceTree = "<group>"; };
 		36A5FD6D22A49144000586ED /* Dark Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dark Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A5FD7022A49144000586ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3628315F22AB13AA000FBB4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3628316022AB13BE000FBB4D /* SearchResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		362F2DCE22A618C0009D1CD4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		36A5FD6F22A49144000586ED /* Dark Store */ = {
 			isa = PBXGroup;
 			children = (
+				3628315F22AB13AA000FBB4D /* Model */,
 				36B73CF322A75FB300DD4056 /* Views */,
 				362F2DCE22A618C0009D1CD4 /* Controller */,
 				36A90FCA22AA10FA004B2329 /* Helpers */,
@@ -176,6 +187,7 @@
 			files = (
 				36A5FD7322A49144000586ED /* ViewController.swift in Sources */,
 				36A5FD7122A49144000586ED /* AppDelegate.swift in Sources */,
+				3628316122AB13BE000FBB4D /* SearchResult.swift in Sources */,
 				36A90FCC22AA1144004B2329 /* UIView+Layout.swift in Sources */,
 				36A5FD8322A491BA000586ED /* MainTabBarController.swift in Sources */,
 				362F2DD222A61943009D1CD4 /* AppsSearchController.swift in Sources */,
