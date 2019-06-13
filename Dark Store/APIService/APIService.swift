@@ -12,9 +12,9 @@ class APIService {
     
     static let shared = APIService() // creating a singleton
     
-    func fetchApps(completion: @escaping ([Result], Error?) -> () ) {
+    func fetchApps(searchTerm: String, completion: @escaping ([Result], Error?) -> () ) {
         
-        let urlString = "https://itunes.apple.com/search?term=instagram&entity=software"
+        let urlString = "https://itunes.apple.com/search?term=\(searchTerm)&entity=software"
         guard let url = URL(string: urlString) else { return }
         
         // fetch data with from Internet
