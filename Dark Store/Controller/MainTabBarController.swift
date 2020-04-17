@@ -15,9 +15,9 @@ class MainTabBarController: UITabBarController { // UITabBarController -> Super 
         tabBar.tintColor = .white
         
         viewControllers = [ // creating viewcontrollers for 3 tabs
+            createNavController(viewController: AppsController(), title: "Apps", imageName: "sheets"),
             createNavController(viewController: AppsSearchController(), title: "Search", imageName: "search"),
-            createNavController(viewController: UIViewController(), title: "Today", imageName: "today"),
-            createNavController(viewController: UIViewController(), title: "Apps", imageName: "sheets")
+            createNavController(viewController: UIViewController(), title: "Today", imageName: "today")
         ]
     }
     
