@@ -1,22 +1,9 @@
-//
 //  AppsGroupCell.swift
 //  Dark Store
-//
 //  Created by George Garcia on 4/16/20.
 //  Copyright © 2020 GeeTeam. All rights reserved.
-//
 
 import UIKit
-
-extension UILabel {
-    
-    convenience init(text: String, font: UIFont) {
-        self.init(frame: .zero)
-        self.text = text
-        self.font = font
-    }
-    
-}
 
 class AppsGroupCell: UICollectionViewCell {
     
@@ -26,11 +13,9 @@ class AppsGroupCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        backgroundColor = .purple
-        
+                
         addSubview(titleLabel)
-        titleLabel.anchor(top: topAnchor, leading: leadingAnchor, bottom: .none, trailing: trailingAnchor)
+        titleLabel.anchor(top: topAnchor, leading: leadingAnchor, bottom: .none, trailing: trailingAnchor, padding: .init(top: 0, left: 16, bottom: 0, right: 0))
         
         addSubview(horizontalController.view)
         horizontalController.view.backgroundColor = .red

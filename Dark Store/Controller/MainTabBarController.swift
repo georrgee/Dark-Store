@@ -15,7 +15,7 @@ class MainTabBarController: UITabBarController { // UITabBarController -> Super 
         tabBar.tintColor = .white
         
         viewControllers = [ // creating viewcontrollers for 3 tabs
-            createNavController(viewController: AppsController(), title: "Apps", imageName: "sheets"),
+            createNavController(viewController: AppsPageController(), title: "Apps", imageName: "sheets"),
             createNavController(viewController: AppsSearchController(), title: "Search", imageName: "search"),
             createNavController(viewController: UIViewController(), title: "Today", imageName: "today")
         ]
@@ -25,6 +25,11 @@ class MainTabBarController: UITabBarController { // UITabBarController -> Super 
         
         let navigationController = UINavigationController(rootViewController: viewController)
         navigationController.navigationBar.prefersLargeTitles = true
+        if #available(iOS 13.0, *) {
+            navigationController.navigationBar.backgroundColor = .systemBackground
+        } else {
+            // Fallback on earlier versions
+        }
         navigationController.tabBarItem.title = title
         navigationController.tabBarItem.image = UIImage(named: imageName)
         

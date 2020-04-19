@@ -1,26 +1,24 @@
-//
-//  AppsController.swift
+//  AppsPageController.swift
 //  Dark Store
-//
 //  Created by George Garcia on 4/16/20.
 //  Copyright © 2020 GeeTeam. All rights reserved.
-//
 
 import UIKit
 
-class AppsController: BaseListController, UICollectionViewDelegateFlowLayout {
+class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout {
     
     let cellID = "id"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.backgroundColor = .yellow
+        collectionView.backgroundColor = .white
         
         collectionView.register(AppsGroupCell.self, forCellWithReuseIdentifier: cellID)
+        
     }
 }
 
-extension AppsController {
+extension AppsPageController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
@@ -32,10 +30,15 @@ extension AppsController {
     }
 }
 
-extension AppsController {
+extension AppsPageController {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: view.frame.width, height: 250)
+        return .init(width: view.frame.width, height: 300)
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return .init(top: 16, left: 0, bottom: 0, right: 0)
     }
     
 }

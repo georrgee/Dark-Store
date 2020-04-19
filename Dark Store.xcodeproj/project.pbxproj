@@ -12,6 +12,8 @@
 		363D69992449405100F5358D /* AppsGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363D69982449405100F5358D /* AppsGroupCell.swift */; };
 		363D699B244944C000F5358D /* AppsHorizontalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363D699A244944C000F5358D /* AppsHorizontalController.swift */; };
 		36420BD022B0AAC000A2CA4C /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36420BCF22B0AAC000A2CA4C /* APIService.swift */; };
+		367F54DF244BFDD300253BD0 /* AppRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367F54DE244BFDD300253BD0 /* AppRowCell.swift */; };
+		367F54E1244BFED700253BD0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367F54E0244BFED700253BD0 /* Extensions.swift */; };
 		36A5FD7122A49144000586ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A5FD7022A49144000586ED /* AppDelegate.swift */; };
 		36A5FD7322A49144000586ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A5FD7222A49144000586ED /* ViewController.swift */; };
 		36A5FD7622A49144000586ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A5FD7422A49144000586ED /* Main.storyboard */; };
@@ -19,7 +21,7 @@
 		36A5FD7B22A49145000586ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A5FD7922A49145000586ED /* LaunchScreen.storyboard */; };
 		36A5FD8322A491BA000586ED /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A5FD8222A491BA000586ED /* MainTabBarController.swift */; };
 		36A90FCC22AA1144004B2329 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A90FCB22AA1144004B2329 /* UIView+Layout.swift */; };
-		36AEE3B724493D7D009F8BFA /* AppsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AEE3B624493D7D009F8BFA /* AppsController.swift */; };
+		36AEE3B724493D7D009F8BFA /* AppsPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AEE3B624493D7D009F8BFA /* AppsPageController.swift */; };
 		36AEE3B924493E58009F8BFA /* BaseListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AEE3B824493E58009F8BFA /* BaseListController.swift */; };
 		36B73CF522A75FCE00DD4056 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B73CF422A75FCE00DD4056 /* SearchResultCell.swift */; };
 		36CBCCA022AA17CA006C034C /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CBCC9F22AA17CA006C034C /* VerticalStackView.swift */; };
@@ -32,6 +34,8 @@
 		363D69982449405100F5358D /* AppsGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsGroupCell.swift; sourceTree = "<group>"; };
 		363D699A244944C000F5358D /* AppsHorizontalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsHorizontalController.swift; sourceTree = "<group>"; };
 		36420BCF22B0AAC000A2CA4C /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		367F54DE244BFDD300253BD0 /* AppRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRowCell.swift; sourceTree = "<group>"; };
+		367F54E0244BFED700253BD0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		36A5FD6D22A49144000586ED /* Dark Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dark Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A5FD7022A49144000586ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36A5FD7222A49144000586ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +45,7 @@
 		36A5FD7C22A49145000586ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36A5FD8222A491BA000586ED /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		36A90FCB22AA1144004B2329 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
-		36AEE3B624493D7D009F8BFA /* AppsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsController.swift; sourceTree = "<group>"; };
+		36AEE3B624493D7D009F8BFA /* AppsPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPageController.swift; sourceTree = "<group>"; };
 		36AEE3B824493E58009F8BFA /* BaseListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListController.swift; sourceTree = "<group>"; };
 		36B73CF422A75FCE00DD4056 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		36CBCC9F22AA17CA006C034C /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				363D69982449405100F5358D /* AppsGroupCell.swift */,
+				367F54DE244BFDD300253BD0 /* AppRowCell.swift */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -138,6 +143,7 @@
 			children = (
 				36A90FCB22AA1144004B2329 /* UIView+Layout.swift */,
 				36CBCC9F22AA17CA006C034C /* VerticalStackView.swift */,
+				367F54E0244BFED700253BD0 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -145,7 +151,7 @@
 		36AEE3B524493D6D009F8BFA /* Apps */ = {
 			isa = PBXGroup;
 			children = (
-				36AEE3B624493D7D009F8BFA /* AppsController.swift */,
+				36AEE3B624493D7D009F8BFA /* AppsPageController.swift */,
 				363D699A244944C000F5358D /* AppsHorizontalController.swift */,
 			);
 			path = Apps;
@@ -300,12 +306,14 @@
 				36A5FD7322A49144000586ED /* ViewController.swift in Sources */,
 				36A5FD7122A49144000586ED /* AppDelegate.swift in Sources */,
 				3628316122AB13BE000FBB4D /* SearchResult.swift in Sources */,
-				36AEE3B724493D7D009F8BFA /* AppsController.swift in Sources */,
+				36AEE3B724493D7D009F8BFA /* AppsPageController.swift in Sources */,
 				36A90FCC22AA1144004B2329 /* UIView+Layout.swift in Sources */,
 				36AEE3B924493E58009F8BFA /* BaseListController.swift in Sources */,
+				367F54DF244BFDD300253BD0 /* AppRowCell.swift in Sources */,
 				36A5FD8322A491BA000586ED /* MainTabBarController.swift in Sources */,
 				363D69992449405100F5358D /* AppsGroupCell.swift in Sources */,
 				362F2DD222A61943009D1CD4 /* AppsSearchController.swift in Sources */,
+				367F54E1244BFED700253BD0 /* Extensions.swift in Sources */,
 				36B73CF522A75FCE00DD4056 /* SearchResultCell.swift in Sources */,
 				36420BD022B0AAC000A2CA4C /* APIService.swift in Sources */,
 				363D699B244944C000F5358D /* AppsHorizontalController.swift in Sources */,
@@ -386,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -441,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -467,7 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.GeeTeam.Dark-Store";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -487,7 +495,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.GeeTeam.Dark-Store";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
