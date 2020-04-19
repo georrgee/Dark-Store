@@ -8,6 +8,7 @@ import UIKit
 class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout {
     
     let cellID = "id"
+    let headerID = "headerId"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +16,19 @@ class AppsPageController: BaseListController, UICollectionViewDelegateFlowLayout
         
         collectionView.register(AppsGroupCell.self, forCellWithReuseIdentifier: cellID)
         
+        // 1
+        collectionView.register(AppsPageHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerID)
+    }
+    
+    // 2
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerID, for: indexPath)
+        return header
+    }
+    
+    // 3
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return .init(width: view.frame.width, height: 300)
     }
 }
 
